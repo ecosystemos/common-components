@@ -21,6 +21,8 @@ assignees: ''
 
 **Specifications**: 
 
+**In-Progress Storybook Link**: ["Asset Name"](Chromatic Link)
+
 props {     
 // with comments as necessary and helpful // 
 }
@@ -35,5 +37,6 @@ props { 
 - [ ] Label
 - [ ] Project
 - [ ] Milestone
+- [ ] In-Progress Storybook link
 
 *Guidelines:* ["GitHub Issues"](https://docs.google.com/document/d/1iWInLjGrLCyB8BSBQDLHnI9xp5k7uryT8F3QJpkUSqc/edit#)
