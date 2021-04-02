@@ -1,0 +1,23 @@
+@media screen and (max-width: 550px) {
+  .sdp-scale-text {
+    width: 8% !important;
+  }
+}
+.sdp-scale-text {
+  position: absolute;
+  height: 22px;
+  text-align: center;
+  width: 16%;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  line-height: 22px;
+}
+
+.grid-item {
+  padding: 10px 0 0 !important;
+}
