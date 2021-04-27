@@ -1,0 +1,16 @@
+@media screen and (max-width: 550px) {
+  .sdp-scale-text {
+    width: 8% !important;
+  }
+}
+.sdp-scale-text {
+  width: 16%;
+}
+
+.grid-item {
+  padding: 10px 0 0 !important;
+}
+.justify-center
+{
+  justify-content: center !important;
+}
