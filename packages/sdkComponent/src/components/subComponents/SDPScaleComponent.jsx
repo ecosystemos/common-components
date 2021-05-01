@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
 export const SDPScaleComponent = ({ from, to, value }) => {
   const Wrap = styled.div`
-    color: ${(props) => props.theme.light};
+    color: ${props => props.theme.light};
     position: absolute;
     height: 22px;
     text-align: center;
@@ -18,10 +18,12 @@ export const SDPScaleComponent = ({ from, to, value }) => {
     line-height: 22px;
   `;
   const Cube = styled.div`
-      height:22px;
-      background:${(props) => props.position === "Mid" ? "#4CA6CD" : "#B4E4F8"};
-      width:${(props) => props.widthScale};
+    height: 22px;
+    background: ${props => (props.position === "Mid" ? "#4CA6CD" : "#B4E4F8")};
+    width: ${props => props.widthScale};
   `;
+  const justifyCenter = {  justifyContent: "center"};
+
   // eslint-disable-next-line no-unused-vars
   const light = {
     light: "white",
@@ -33,7 +35,7 @@ export const SDPScaleComponent = ({ from, to, value }) => {
 
   const boxType = ["Start", "Mid", "End"];
 
-  const sendHeightVal = (data) => {
+  const sendHeightVal = data => {
     if (data === "Start") {
       if (from === 100 && to === 0) {
         return 100;
@@ -62,19 +64,20 @@ export const SDPScaleComponent = ({ from, to, value }) => {
   };
   return (
     <ThemeProvider theme={light}>
-      <HStack className="justify-center" spacing="0px">
-        <Wrap className="sdp-scale-text">{value}</Wrap>
-        {boxType.map((type, key) => {
-          return (
-            <Cube key={key}
-              widthScale={() => {
-                return sendHeightVal(type) + "%";
-              }}
-              position={type}
-            />
-          );
-        })}
-      </HStack>
+        <HStack style={justifyCenter} spacing="0px">
+          <Wrap>{value}</Wrap>
+          {boxType.map((type, key) => {
+            return (
+              <Cube
+                key={key}
+                widthScale={() => {
+                  return sendHeightVal(type) + "%";
+                }}
+                position={type}
+              />
+            );
+          })}
+        </HStack>
     </ThemeProvider>
   );
 };

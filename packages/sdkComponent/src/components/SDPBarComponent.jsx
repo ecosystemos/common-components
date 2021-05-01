@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid } from "@chakra-ui/react";
 import { SDPScaleComponent } from "./subComponents/SDPScaleComponent";
-import "../assets/Css/Component.css";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
@@ -32,9 +31,8 @@ export function SDPBar({ from = 0, to = 1 }) {
     }
   };
   return (
-    <Grid templateColumns="repeat(6, 1fr)" gap={2} className="grid-item">
+    <Grid templateColumns="repeat(6, 1fr)" gap={2}>
       {range.map((val, key) => {
-        debugger;
         return (
           <Wrap key={key}>
             <SDPScaleComponent
