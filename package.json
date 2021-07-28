@@ -5,6 +5,7 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@apollo/client": "^3.3.21",
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
@@ -28,6 +29,7 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1",
+    "graphql": "^15.5.1",
     "lerna": "^3.20.2",
     "prettier": "^2.2.1",
     "prop-types": "^15.7.2",
