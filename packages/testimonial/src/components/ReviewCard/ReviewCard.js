@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Box, Text, Heading, Center, Container } from "@chakra-ui/react"
 import { Image } from "@chakra-ui/react"
 import { useQuery,gql } from "@apollo/client";
+import styled from "styled-components";
 
 import UserImg from '.././../user.jpg';
 
