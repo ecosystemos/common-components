@@ -1,0 +1,17 @@
+import { useQuery,gql } from "@apollo/client";
+import React from "react";
+import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+
+const client = new ApolloClient ({
+  uri: "https://api-eu-central-1.graphcms.com/v2/ckqpfgn0hyp0m01xxb83bcuno/master",
+  cache : new InMemoryCache(),
+  headers: {
+    Authorization: "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImdjbXMtbWFpbi1wcm9kdWN0aW9uIn0.eyJ2ZXJzaW9uIjozLCJpYXQiOjE2MjY2OTI1ODUsImF1ZCI6WyJodHRwczovL2FwaS1ldS1jZW50cmFsLTEuZ3JhcGhjbXMuY29tL3YyL2NrcXBmZ24waHlwMG0wMXh4YjgzYmN1bm8vbWFzdGVyIiwiaHR0cHM6Ly9tYW5hZ2VtZW50LW5leHQuZ3JhcGhjbXMuY29tIl0sImlzcyI6Imh0dHBzOi8vbWFuYWdlbWVudC5ncmFwaGNtcy5jb20vIiwic3ViIjoiZWJhNmRjYTQtNzJhYy00NTgwLThlNTctN2RkYTk1ODI2ZmZhIiwianRpIjoiY2tyYWlya2M3MDJtZzAxdW81NGU4NGM3ciJ9.FIk6gbWG50GFTK4TLVT_SGyiyU5chcKkwe7winPAkrMMoylrSpLpUGHiDMt3Mjnzrum-nM4M4d26GvuYr59P1g5TYqYPRehIbhr_3M1F4J8dXtaKWBlYkz2L6daQkAfPZ0bKHQTfSQNNGVHLMeJy_ORVl6Nk3WYZ5mO5UPcpiCdi1BJ23IwzWuuPlu2FoKIwh3s_KXJM8nAow8rNBRlJNTAgBlEVwbtRrJYKdj96bCuTWLNM_pUxzxHp5DO3_6g9PwECB-Ys5CcIYndKeclzGh4OqmHwuV38XciKn4WJD3uKXxYnm4_4CFSAOLFThOHQYtp-FTxwzouS_5vfbs49iY6YnPoQxIJPyb6aNg3JlU28mCEz6-Ar6HNiKdGn-W_Cbuhi8CAihSQdAEcTR8VHugfqhlJZ0B051Amgy4lhROt-NlqY43R4_o2QvEO47Z7m-JW_JTmRD48lprwH2eZp-icX8xTYJM2zzw1t7MxWMS_J1taBUPUXs1sQzQ8CwR2rarZDnp0riJj55Yb0krGVrCjw1cphk842J3OiyBOrER6yu9KqUzE3nrDZE5rELJCO8evJNIOBQgPpsY2ACWVShHIiVsB4Bbs1OVYOWpC1ltmxCzG5XELEePaGIODPKW_2rNtAhp-bBoZnSH6AEOf-4cT0vv0N6lBYjSFTDIKYKwE",
+  },
+});
+
+const ApolloWraper = ({children})=> (
+    <ApolloProvider client={client}>{children}</ApolloProvider>
+);
+
+export default ApolloWraper;
