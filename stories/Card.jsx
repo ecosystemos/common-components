@@ -13,6 +13,7 @@ export const Card = ({ title, content, primaryFunction, secondaryFunction, ...pr
       <Content> {content} </Content>
       <Flex>
         <Spacer />
+        {/* Set the text for the button as required to the issue */}
         <Button label={"Cancel"} isPrimary={false} onClick={secondaryFunction} />
         <Button label={"Archive Note"} isPrimary={true} onClick={primaryFunction} marginRight={true} />
       </Flex>

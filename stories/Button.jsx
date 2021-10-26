@@ -18,9 +18,10 @@ export const Button = ({ isPrimary, label, onClick, marginRight }) => {
 };
 
 Button.propTypes = {
+  // isPrimary is the selector to control the background color specially and other style
   isPrimary: PropTypes.bool,
   label: PropTypes.string.isRequired,
-  marginRight : PropTypes.bool,
+  marginRight: PropTypes.bool,
   onClick: PropTypes.func,
 };
 
@@ -36,7 +37,7 @@ const Container = styled.button`
   border: ${props => `2px solid ${props.theme.colors.darkBlue}`};
   border-radius: ${props => props.theme.borderRadius.radius};
   padding: ${props => props.theme.padding.buttonPadding};
-  margin: ${ ({ marginRight }) => !marginRight ? "16px 24px 0 0" : "16px 0 0 0"};
+  margin: ${({ marginRight }) => !marginRight ? "16px 24px 0 0" : "16px 0 0 0"};
   background-color: ${props => props.isPrimary ? props.theme.colors.darkBlue : props.theme.colors.white};
   box-shadow: ${({ isPrimary }) => isPrimary ? `0px 4px 8px rgba(34, 44, 47, 0.16)` : null};
 `;
