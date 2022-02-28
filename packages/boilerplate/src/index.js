@@ -1,3 +1,3 @@
-import { getInfo } from "./Test";
-const Test = { getInfo };
-export default Test;
+import { NotificationCard } from "./NotificationCard";
+const NotificationCard = { NotificationCard };
+export default NotificationCard;
