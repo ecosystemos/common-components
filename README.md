@@ -1,9 +1,9 @@
 # common-components
  sc-traineeship-charretto-code-library
 
-storbook lib and related peer-dependecies to it has been upgraded in package.json
-storybook knob has been deleted from the project in packages.json and storybook/main.js
+Here is a quick loom for it as well: https://www.loom.com/share/e8e1f6ff487a43a89a39224ed61908f4
 
-This push contains the Charretto Feature user story 3 as a library of components and contains thier complete web page
-It also contains Testimonial Slider two components .. Slider and Review Card
+Chromatic link for TitleDescription_InputExpandableCard.js component: https://www.chromatic.com/component?appId=617153c21240d3003a0a1899&name=Charretto%20F3%2FTitle%20Description%20Input%20Expandable%20Card&buildNumber=1&componentInspectorKey=617155148b36cb004aad6831-1200-interactive-true&historyLengthAtIndex=3&distanceToMoveBack=-1
+
+Here is chromatic link for the whole lib as well: https://www.chromatic.com/library?appId=617153c21240d3003a0a1899
 
